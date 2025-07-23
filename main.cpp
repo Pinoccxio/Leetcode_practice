@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "Leetcode/solution_75.h"
+#include "Leetcode/interview_75/solution_75.h"
+#include "Leetcode/suixianglu/solution_suixianglu.h"
 
 using namespace std;
 // tip: Run-(Shift + F10)
@@ -9,6 +10,7 @@ using namespace std;
 
 int main() {
     Solution_75 solution_75;
+    Solution_suixianglu suixianglu;
 
     // ======= mergeAlternately =======
     // string word1 = "abc";
