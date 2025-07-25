@@ -4,7 +4,7 @@
 
 #include "solution_suixianglu.h"
 
-#include <_mingw_mac.h>
+// #include <_mingw_mac.h>
 
 
 // ===================== 数组 =====================
