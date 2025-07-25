@@ -1,8 +1,0 @@
-# ninja log v6
-156	190	1753239107928305470	xin	cd296c713c1e9915
-1	197	1753238912762334648	CMakeFiles/xin.dir/Leetcode/solution_suixianglu.cpp.o	a173d41ca858ab33
-0	262	1753238890594164473	CMakeFiles/xin.dir/Leetcode/solution_75.cpp.o	75e9c4aee3cb8033
-0	156	1753239107768298545	CMakeFiles/xin.dir/main.cpp.o	511198a370609006
-1	221	1753239072294571255	CMakeFiles/xin.dir/Leetcode/suixianglu/solution_suixianglu.cpp.o	57fd845fccc69b84
-1	17	1753239114292574549	build.ninja	2df1f844624a6e0e
-1	234	1753239072294571255	CMakeFiles/xin.dir/Leetcode/interview_75/solution_75.cpp.o	3b66d122c9d67e96
