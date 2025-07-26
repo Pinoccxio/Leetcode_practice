@@ -10,7 +10,7 @@
    + n 将在 `[1, 10000]` 之间。
    + `nums` 的每个元素都将在 `[-9999, 9999]` 之间。
 
-   ![](/assets_suixianglu/0704.png)
+   ![](/assets/suixianglu/0704.png)
 
 ### 1.2 移除元素
 [remove-element](https://leetcode.cn/problems/remove-element/)
@@ -20,7 +20,7 @@
    + `0 <= nums[i] <= 50`
    + `0 <= val <= 100`
    
-   ![](/assets_suixianglu/0027.png)
+   ![](/assets/suixianglu/0027.png)
 
 ### 1.3 有序数组的平方
 [squares-of-a-sorted-array](https://leetcode.cn/problems/squares-of-a-sorted-array/)
@@ -30,7 +30,7 @@
    + `-104 <= nums[i] <= 10^4`
    + `nums` 已按 **非递减顺序** 排序
    
-   ![](/assets_suixianglu/0977.png)
+   ![](/assets/suixianglu/0977.png)
 
 ### 1.4 长度最小的子数组
 [minimum-size-subarray-sum](https://leetcode.cn/problems/minimum-size-subarray-sum/)
@@ -48,7 +48,7 @@
    **提示：**
    + `1 <= n <= 20`
    
-   ![](/assets_suixianglu/0059.png)
+   ![](/assets/suixianglu/0059.png)
 
 ## 2. 链表
 
@@ -60,7 +60,7 @@
    + `1 <= Node.val <= 50`
    + `0 <= val <= 50`
 
-   ![](/assets_suixianglu/0203.png)
+   ![](/assets/suixianglu/0203.png)
 
 7. title
    []()
