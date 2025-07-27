@@ -2,7 +2,7 @@
 // Created by chenx on 2025/5/12.
 //
 
-#include "solution_suixianglu.h"
+#include "suixianglu.h"
 
 // #include <_mingw_mac.h>
 
@@ -10,7 +10,7 @@
 // ===================== 数组 =====================
 
     // LeetCode_704——二分查找 (25/05/12 DONE: 0 ms——100%, 30.63MB——74.06%)
-    int Solution_suixianglu::search(vector<int>& nums, int target) {
+    int Suixianglu::search(vector<int>& nums, int target) {
         // ======= LeetCode Solution =======
         int left = 0, right = nums.size() - 1;
         while(left <= right){
@@ -47,7 +47,7 @@
 
 
     // LeetCode_27——移除元素 (25/05/12 DONE: 0 ms——100%, 11.40MB——95.18%)
-    int Solution_suixianglu::removeElement(vector<int>& nums, int val) {
+    int Suixianglu::removeElement(vector<int>& nums, int val) {
         // ======= LeetCode Solution =======
         int left = 0, right = nums.size();
         while (left < right) {
@@ -78,7 +78,7 @@
 
 
     // LeetCode_977——有序数组的平方 (25/05/12 DONE: 7 ms——26.89%, 29.68MB——47.99%)
-    vector<int> Solution_suixianglu::sortedSquares(vector<int>& nums) {
+    vector<int> Suixianglu::sortedSquares(vector<int>& nums) {
         // ======= LeetCode Solution =======
         int n = nums.size();
         vector<int> ans(n);
@@ -127,7 +127,7 @@
 
 
     // LeetCode_209——长度最小的子数组 (25/05/12 DONE: 0 ms——100%, 31.53MB——31.35%)
-    int Solution_suixianglu::minSubArrayLen(int target, vector<int>& nums) {
+    int Suixianglu::minSubArrayLen(int target, vector<int>& nums) {
         int n = nums.size();
         int i = 0, len = n+1, sum = 0, subLen = 0;
         for (int j = 0; j < n; j++) {
@@ -149,7 +149,7 @@
 
 
     // LeetCode_59——螺旋矩阵II (25/05/12 UNDONE!!!)
-    vector<vector<int>> Solution_suixianglu::generateMatrix(int n) {
+    vector<vector<int>> Suixianglu::generateMatrix(int n) {
         // ======= SuiXiangLu Solution =======
         vector<vector<int>> res(n, vector<int>(n, 0)); // 使用vector定义一个二维数组
         int startx = 0, starty = 0; // 定义每循环一个圈的起始位置
@@ -200,7 +200,7 @@
 
 // ===================== 链表 =====================
     // LeetCode_203——移除链表元素 (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
-    ListNode* Solution_suixianglu::removeElements(ListNode* head, int val) {
+    ListNode* Suixianglu::removeElements(ListNode* head, int val) {
         ListNode* cur = new ListNode(0);
         cur->next = head;
         ListNode* res = cur;

@@ -10,7 +10,7 @@
    + n 将在 `[1, 10000]` 之间。
    + `nums` 的每个元素都将在 `[-9999, 9999]` 之间。
 
-   ![](/assets/suixianglu/0704.png)
+   ![](/Leetcode/suixianglu/assets/0704.png)
 
 ### 1.2 移除元素
 [remove-element](https://leetcode.cn/problems/remove-element/)
@@ -20,7 +20,7 @@
    + `0 <= nums[i] <= 50`
    + `0 <= val <= 100`
    
-   ![](/assets/suixianglu/0027.png)
+   ![](/Leetcode/suixianglu/assets/0027.png)
 
 ### 1.3 有序数组的平方
 [squares-of-a-sorted-array](https://leetcode.cn/problems/squares-of-a-sorted-array/)
@@ -30,7 +30,7 @@
    + `-104 <= nums[i] <= 10^4`
    + `nums` 已按 **非递减顺序** 排序
    
-   ![](/assets/suixianglu/0977.png)
+   ![](/Leetcode/suixianglu/assets/0977.png)
 
 ### 1.4 长度最小的子数组
 [minimum-size-subarray-sum](https://leetcode.cn/problems/minimum-size-subarray-sum/)
@@ -40,7 +40,7 @@
    + `1 <= nums.length <= 10^5`
    + `1 <= nums[i] <= 10^4`
 
-   ![](assets_suixianglu/0209.png)
+   ![](/Leetcode/suixianglu/assets/0209.png)
 
 ### 1.5 螺旋矩阵II
    [spiral-matrix-ii](https://leetcode.cn/problems/spiral-matrix-ii/)
@@ -48,7 +48,7 @@
    **提示：**
    + `1 <= n <= 20`
    
-   ![](/assets/suixianglu/0059.png)
+   ![](/Leetcode/suixianglu/assets/0059.png)
 
 ## 2. 链表
 
@@ -60,35 +60,38 @@
    + `1 <= Node.val <= 50`
    + `0 <= val <= 50`
 
-   ![](/assets/suixianglu/0203.png)
+   ![](/Leetcode/suixianglu/assets/0203.png)
 
-7. title
-   []()
+### 2.2 设计链表
+   [design-linked-list](https://leetcode.cn/problems/design-linked-list/)
 
    **提示：**
+   + `0 <= index, val <= 1000`
+   + 请不要使用内置的LinkedList库
+   + 调用 `get`、`addAtHead`、`addAtIndex`和`deleteAtIndex`的次数不超过`2000`
 
-   ![](assets_suixianglu/)
+   ![](/Leetcode/suixianglu/assets/0707.png)
 
 8. title
    []()
 
    **提示：**
 
-   ![](assets_suixianglu/)
+   ![](/Leetcode/suixianglu/assets/)
 
 9. title
    []()
 
    **提示：**
 
-   ![](assets_suixianglu/)
+   ![](/Leetcode/suixianglu/assets/)
 
 10. title
     []()
 
 **提示：**
 
-![](assets_suixianglu/)
+![](/Leetcode/suixianglu/assets/)
 
 
 

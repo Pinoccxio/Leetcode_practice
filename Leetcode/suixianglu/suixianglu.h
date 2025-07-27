@@ -2,8 +2,8 @@
 // Created by chenx on 2025/5/12.
 //
 
-#ifndef SOLUTION_SUIXIANGLU_H
-#define SOLUTION_SUIXIANGLU_H
+#ifndef SSUIXIANGLU_H
+#define SUIXIANGLU_H
 
 #pragma once
 
@@ -25,7 +25,7 @@ struct ListNode {
 };
 
 
-class Solution_suixianglu {
+class Suixianglu {
     public:
     // ===================== 数组 =====================
         // LeetCode_704——二分查找
@@ -56,4 +56,4 @@ class Solution_suixianglu {
 
 
 
-#endif //SOLUTION_SUIXIANGLU_H
+#endif //SUIXIANGLU_H

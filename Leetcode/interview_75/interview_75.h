@@ -2,8 +2,8 @@
 // Created by chenx on 2025/4/30.
 //
 
-#ifndef SOLUTION_75_H
-#define SOLUTION_75_H
+#ifndef INTERVIEW_75_H
+#define INTERVIEW_75_H
 
 #pragma once
 #include <iostream>
@@ -15,7 +15,7 @@
 using namespace std;
 
 
-class Solution_75 {
+class Interview_75 {
     public:
         // LeetCode_1768——交替合并字符串
         string mergeAlternately(string word1, string word2);
@@ -35,4 +35,4 @@ class Solution_75 {
 
 
 
-#endif //SOLUTION_75_H
+#endif //INTERVIEW_75_H

@@ -2,12 +2,12 @@
 // Created by chenx on 2025/4/30.
 //
 
-#include "./solution_75.h"
+#include "./interview_75.h"
 
 
 
 // LeetCode_1768——交替合并字符串 (25/05/07 DONE: 0 ms——100%, 8.46MB——48.23%)
-string Solution_75::mergeAlternately(string word1, string word2) {
+string Interview_75::mergeAlternately(string word1, string word2) {
     // ======= LeetCode Solution =======
     int m = word1.size(), n = word2.size();
     int i = 0, j = 0;
@@ -79,7 +79,7 @@ inline int divisionAlgorithm(int a, int b){
 }
 
 // LeetCode_1071——字符串的最大公因子 (25/05/08 UNDONE!!!)
-string Solution_75::gcdOfStrings(string str1, string str2) {
+string Interview_75::gcdOfStrings(string str1, string str2) {
     // ======= LeetCode Solution =======
     int len1 = (int)str1.length(), len2 = (int)str2.length();
     for (int i = min(len1, len2); i >= 1; --i){ // 从长度大的开始枚举
@@ -109,7 +109,7 @@ string Solution_75::gcdOfStrings(string str1, string str2) {
 
 
 // LeetCode_1431——拥有最多糖果的孩子 (25/05/06 DONE: 0 ms——100%, 12.38MB——18.56%)
-vector<bool> Solution_75::kidsWithCandies(vector<int>& candies, int extraCandies) {
+vector<bool> Interview_75::kidsWithCandies(vector<int>& candies, int extraCandies) {
 
     // ======= LeetCode Solution =======
     int n = candies.size();
@@ -143,7 +143,7 @@ vector<bool> Solution_75::kidsWithCandies(vector<int>& candies, int extraCandies
 
 
 // LeetCode_0605——种花问题 (25/05/12 DONE: 4 ms——9.27%, 26.59MB——5%)
-bool Solution_75::canPlaceFlowers(vector<int>& flowerbed, int n) {
+bool Interview_75::canPlaceFlowers(vector<int>& flowerbed, int n) {
     // ======= LeetCode Solution =======
     int count = 0;
     int m = flowerbed.size();
@@ -184,7 +184,7 @@ bool Solution_75::canPlaceFlowers(vector<int>& flowerbed, int n) {
 
 
 // LeetCode_0345——反转字符串中的元音字母
-string Solution_75::reverseVowels(string s) {
+string Interview_75::reverseVowels(string s) {
 
     return "TODO";
 }
