@@ -9,13 +9,13 @@ using namespace std;
 // tip: Breakpoint-(Ctrl + F8)
 
 int main() {
-    Solution_75 solution_75;
+    Interview_75 Interview_75;
     Suixianglu suixianglu;
 
     // ======= mergeAlternately =======
     // string word1 = "abc";
     // string word2 = "pqr";
-    // string merge = solution_75.mergeAlternately(word1, word2);
+    // string merge = Interview_75.mergeAlternately(word1, word2);
     //
     // printf("%s\n", merge.c_str());
     // ======= mergeAlternately =======
@@ -23,7 +23,7 @@ int main() {
     // ======= gcdOfStrings =======
     // string str1 = "ABCDE";
     // string str2 = "ABC";
-    // string gcd = solution_75.gcdOfStrings(str1, str2);
+    // string gcd = Interview_75.gcdOfStrings(str1, str2);
     // printf("%s\n", gcd.c_str());
     // ======= gcdOfStrings =======
 
@@ -37,7 +37,7 @@ int main() {
     // flowerbed.push_back(0);
     // flowerbed.push_back(1);
     // int n = 2;
-    // bool plant = solution_75.canPlaceFlowers(flowerbed, n);
+    // bool plant = Interview_75.canPlaceFlowers(flowerbed, n);
     // cout << plant << endl;
     // ======= canPlaceFlowers =======
 
