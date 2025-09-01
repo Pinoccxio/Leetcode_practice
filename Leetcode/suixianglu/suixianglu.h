@@ -47,28 +47,23 @@ class Suixianglu {
     // ===================== 链表 =====================
         // LeetCode_203——移除链表元素
         ListNode* removeElements(ListNode* head, int val);
-
-
-
-
-    // ===================== 链表 =====================
 };
 
 
-
+// LeetCode_707——设计链表
 class MyLinkedList {
-    public:
-        MyLinkedList();
+public:
+	MyLinkedList();
 
-        int get(int index);
+    int get(int index);
 
-        void addAtHead(int val);
+    void addAtHead(int val);
 
-        void addAtTail(int val);
+    void addAtTail(int val);
 
-        void addAtIndex(int index, int val);
+    void addAtIndex(int index, int val);
 
-        void deleteAtIndex(int index);
+    void deleteAtIndex(int index);
 };
 
 
