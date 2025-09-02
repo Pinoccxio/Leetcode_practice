@@ -6,5 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(xin main.cpp
         Leetcode/interview_75/interview_75.cpp
         Leetcode/interview_75/interview_75.h
-        Leetcode/suixianglu/suixianglu.cpp
-        Leetcode/suixianglu/suixianglu.h)
+        Leetcode/suixianglu/Array.cpp
+        Leetcode/suixianglu/Array.h
+        Leetcode/suixianglu/MyLinkedList.cpp
+        Leetcode/suixianglu/MyLinkedList.h
+)
