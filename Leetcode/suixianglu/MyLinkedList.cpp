@@ -110,3 +110,17 @@ ListNode* reverseList(ListNode* head) {
     return slow;
 }
 // <<< LeetCode_206——翻转链表 <<<
+
+
+// >>> LeetCode_24——两两交换链表中的节点 >>>
+// (25/09/02 DONE: 0 ms——100.00%, 11.09MB——21.80%)
+ListNode* swapPairs(ListNode* head) {
+    if (head == nullptr || head->next == nullptr) {
+        return head;
+    }
+    ListNode* newHead = head -> next;
+    head -> next = swapPairs(newHead -> next);
+    newHead -> next = head;
+    return newHead;
+}
+// <<< LeetCode_24——两两交换链表中的节点 <<<

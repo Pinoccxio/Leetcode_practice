@@ -5,7 +5,7 @@
 #ifndef MYLINKEDLIST_H
 #define MYLINKEDLIST_H
 
-// #pragma once
+#pragma once
 
 
 struct ListNode {

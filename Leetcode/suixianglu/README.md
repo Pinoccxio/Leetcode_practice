@@ -84,12 +84,14 @@
 
    ![](/Leetcode/suixianglu/assets/0206.png)
 
-9. title
-   []()
+### 2.4 两两交换链表中的节点
+   [swap-nodes-in-pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/)
 
    **提示：**
+   + 链表中节点的数目在范围 `[0, 100]` 内
+   + `0 <= Node.val <= 100`
 
-   ![](/Leetcode/suixianglu/assets/)
+   ![](/Leetcode/suixianglu/assets/0024.png)
 
 10. title
     []()
