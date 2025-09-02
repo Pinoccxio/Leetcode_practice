@@ -4,7 +4,8 @@
 
 #include "MyLinkedList.h"
 
-// LeetCode_203——移除链表元素 (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
+// >>> LeetCode_203——移除链表元素 >>>
+// (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
 ListNode* removeElements(ListNode* head, int val) {
     ListNode* cur = new ListNode(0);
     cur->next = head;
@@ -20,9 +21,11 @@ ListNode* removeElements(ListNode* head, int val) {
     }
     return res->next;
 }
+// <<< LeetCode_203——移除链表元素 <<<
 
 
-// LeetCode_707——设计链表 (25/09/01 DONE: 3 ms——96.00%, 25.81MB——5%)
+// >>> LeetCode_707——设计链表 >>>
+// (25/09/01 DONE: 3 ms——96.00%, 25.81MB——5%)
 MyLinkedList::MyLinkedList() {
     d_list = new DoubleLinkList(0);
     d_list -> next = d_list;
@@ -88,3 +91,22 @@ void MyLinkedList::deleteAtIndex(int index) {
     delete tmp;
     list_size--;
 }
+// <<< LeetCode_707——设计链表 <<<
+
+
+// >>> LeetCode_206——翻转链表 >>>
+// (25/09/02 DONE: 0 ms——100.00%, 13.04MB——90.88%)
+ListNode* reverseList(ListNode* head) {
+    ListNode* tmp = new ListNode(0);    // 存储下一个的结点以防断掉
+    ListNode* slow = nullptr;           // 慢指针
+    ListNode* fast = head;              // 快指针
+
+    while(fast){
+        tmp = fast -> next;
+        fast -> next = slow;
+        slow = fast;
+        fast = tmp;
+    }
+    return slow;
+}
+// <<< LeetCode_206——翻转链表 <<<
