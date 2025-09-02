@@ -72,12 +72,17 @@
 
    ![](/Leetcode/suixianglu/assets/0707.png)
 
-8. title
-   []()
+### 2.3 翻转链表
+   [reverse-linked-list](https://leetcode.cn/problems/reverse-linked-list/)
 
    **提示：**
+   + 链表中节点的数目范围是 `[0, 5000]`
+   + `-5000 <= Node.val <= 5000`
 
-   ![](/Leetcode/suixianglu/assets/)
+   **进阶：** 
+   链表可以选用迭代或递归方式完成反转。
+
+   ![](/Leetcode/suixianglu/assets/0206.png)
 
 9. title
    []()
