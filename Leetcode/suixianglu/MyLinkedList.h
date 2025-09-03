@@ -50,6 +50,9 @@ public:
 
     // LeetCode_interview02.07——链表相交
     ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
+
+    // LeetCode_142——环形链表 II
+    ListNode *detectCycle(ListNode *head);
 private:
     DoubleLinkList* d_list;
     int list_size;

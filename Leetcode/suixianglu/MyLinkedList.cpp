@@ -209,3 +209,36 @@ MyLinkedList::ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListN
     return a_head;
 }
 // <<< LeetCode_interview02.07——链表相交点 <<<
+
+// >>> LeetCode_142——环形链表 II >>>
+// (25/09/03 DONE: 12 ms——25.16%, 11.11MB——75.38%)
+MyLinkedList::ListNode* MyLinkedList::detectCycle(ListNode *head) {
+    ListNode* dummyHead = new ListNode(0);
+    dummyHead -> next = head;
+    ListNode* fast = dummyHead;
+    ListNode* slow = dummyHead;
+    ListNode* newHead = dummyHead;
+
+    slow = slow -> next;
+    if (slow == nullptr) {
+        return NULL;
+    }
+    fast = fast -> next -> next;
+
+    while (fast != slow) {
+        if (fast != nullptr and fast -> next != nullptr) {
+            fast = fast -> next -> next;
+            slow = slow -> next;
+        }
+        else {
+            return NULL;
+        }
+    }
+
+    while (newHead != slow) {
+        newHead = newHead -> next;
+        slow = slow -> next;
+    }
+    return newHead;
+}
+// <<< LeetCode_142——环形链表 II <<<
