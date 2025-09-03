@@ -6,7 +6,7 @@
 
 // >>> LeetCode_203——移除链表元素 >>>
 // (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
-ListNode* MyLinkedList::removeElements(ListNode* head, int val) {
+MyLinkedList::ListNode* MyLinkedList::removeElements(ListNode* head, int val) {
     ListNode* cur = new ListNode(0);
     cur->next = head;
     ListNode* res = cur;
@@ -96,7 +96,7 @@ void MyLinkedList::deleteAtIndex(int index) {
 
 // >>> LeetCode_206——翻转链表 >>>
 // (25/09/02 DONE: 0 ms——100.00%, 13.04MB——90.88%)
-ListNode* MyLinkedList::reverseList(ListNode* head) {
+MyLinkedList::ListNode* MyLinkedList::reverseList(ListNode* head) {
     ListNode* tmp = new ListNode(0);    // 存储下一个的结点以防断掉
     ListNode* slow = nullptr;           // 慢指针
     ListNode* fast = head;              // 快指针
@@ -114,7 +114,7 @@ ListNode* MyLinkedList::reverseList(ListNode* head) {
 
 // >>> LeetCode_24——两两交换链表中的节点 >>>
 // (25/09/02 DONE: 0 ms——100.00%, 11.09MB——21.80%)
-ListNode* MyLinkedList::swapPairs(ListNode* head) {
+MyLinkedList::ListNode* MyLinkedList::swapPairs(ListNode* head) {
     if (head == nullptr || head->next == nullptr) {
         return head;
     }
@@ -146,14 +146,14 @@ ListNode* MyLinkedList::swapPairs(ListNode* head) {
 
 
 // >>> LeetCode_19——删除链表的倒数第 N 个结点 >>>
-ListNode* MyLinkedList::removeNthFromEnd(ListNode* head, int n) {
+MyLinkedList::ListNode* MyLinkedList::removeNthFromEnd(ListNode* head, int n) {
 
 }
 // <<< LeetCode_19——删除链表的倒数第 N 个结点 <<<
 
 
-// >>> LeetCode_interview02.07—— 链表相交 >>>
-ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
+// >>> LeetCode_interview02.07——链表相交 >>>
+MyLinkedList::ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
 
 }
-// <<< LeetCode_interview02.07—— 链表相交点 <<<
+// <<< LeetCode_interview02.07——链表相交点 <<<
