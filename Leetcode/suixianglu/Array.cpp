@@ -2,7 +2,7 @@
 // Created by chenx on 2025/5/12.
 //
 
-#include "Array.h"
+#include "./Array.h"
 
 // #include <_mingw_mac.h>
 

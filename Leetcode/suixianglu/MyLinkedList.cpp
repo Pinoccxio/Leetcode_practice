@@ -2,7 +2,7 @@
 // Created by cx on 25-9-2.
 //
 
-#include "MyLinkedList.h"
+#include "./MyLinkedList.h"
 
 // >>> LeetCode_203——移除链表元素 >>>
 // (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
@@ -33,6 +33,7 @@ MyLinkedList::MyLinkedList() {
     list_size = 0;
 }
 
+// 链表索引
 int MyLinkedList::get(int index) {
     if (index > (list_size - 1) || index < 0) { // 检查索引是否超出范围
         return -1; // 如果超出范围，返回-1
@@ -44,6 +45,7 @@ int MyLinkedList::get(int index) {
     return tmp -> val;
 }
 
+// 链表头部添加
 void MyLinkedList::addAtHead(int val) {
     DoubleLinkList* newNode = new DoubleLinkList(val);
     DoubleLinkList* ori_next = d_list -> next;
@@ -54,6 +56,7 @@ void MyLinkedList::addAtHead(int val) {
     d_list -> next = newNode;
 }
 
+// 链表头部添加
 void MyLinkedList::addAtTail(int val) {
     DoubleLinkList* newNode = new DoubleLinkList(val);
     DoubleLinkList* ori_tail = d_list -> prev;
@@ -64,6 +67,7 @@ void MyLinkedList::addAtTail(int val) {
     d_list -> prev = newNode;
 }
 
+// 链表索引添加
 void MyLinkedList::addAtIndex(int index, int val) {
     if (index > list_size) return;
     if (index < 0) index = 0;
@@ -80,6 +84,7 @@ void MyLinkedList::addAtIndex(int index, int val) {
     tmp -> prev = newNode;
 }
 
+// 链表索引删除
 void MyLinkedList::deleteAtIndex(int index) {
     if (index < 0 || index >= list_size) return;
     DoubleLinkList* tmp = d_list -> next;
@@ -146,14 +151,61 @@ MyLinkedList::ListNode* MyLinkedList::swapPairs(ListNode* head) {
 
 
 // >>> LeetCode_19——删除链表的倒数第 N 个结点 >>>
+// (25/09/03 DONE: 0 ms——100.00%, 14.61MB——89.56%)
 MyLinkedList::ListNode* MyLinkedList::removeNthFromEnd(ListNode* head, int n) {
-
+    ListNode* dummy = new ListNode(0);
+    dummy -> next = head;
+    ListNode* slow = dummy;
+    ListNode* fast = dummy;
+    for (int i = 0; i < n+1; i++) {
+        fast = fast -> next;
+    }
+    while (fast != nullptr) {
+        slow = slow -> next;
+        fast = fast -> next;
+    }
+    ListNode* tmp = slow -> next;
+    slow -> next = tmp -> next;
+    return dummy -> next;
 }
 // <<< LeetCode_19——删除链表的倒数第 N 个结点 <<<
 
 
 // >>> LeetCode_interview02.07——链表相交 >>>
+// (25/09/03 DONE: 42 ms——50.99%, 18.13MB——79.00%)
 MyLinkedList::ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
+    ListNode* a_head = headA;
+    ListNode* b_head = headB;
+    int lenA = 0;
+    int lenB = 0;
+    while(a_head != nullptr) {
+        lenA++;
+        a_head = a_head -> next;
+    }
+    while(b_head != nullptr) {
+        lenB++;
+        b_head = b_head -> next;
+    }   // 至此得到两个链表的长度，记得复原链表头结点
 
+    a_head = headA;
+    b_head = headB;
+    int gap = lenA - lenB;
+    if (gap > 0) {
+        while(gap-- && a_head != nullptr) {
+            a_head = a_head -> next;
+        }
+    }
+    else if (gap < 0) {
+        gap = abs(gap);
+        while(gap-- && b_head != nullptr) {
+            b_head = b_head -> next;
+        }
+    }   // 尾部对齐两个链表
+
+    while(a_head != b_head) {
+        a_head = a_head -> next;
+        b_head = b_head -> next;
+    }
+    return a_head;
 }
 // <<< LeetCode_interview02.07——链表相交点 <<<

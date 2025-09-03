@@ -7,6 +7,8 @@
 
 #pragma once
 
+using namespace std;
+
 
 class MyLinkedList {
 public:
