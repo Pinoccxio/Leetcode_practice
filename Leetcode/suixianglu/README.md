@@ -154,5 +154,38 @@
 
   ![](/Leetcode/suixianglu/assets/hash_table/0242.png)
 
+### 3.2 两个数组的交集
+  [intersection-of-two-arrays](https://leetcode.cn/problems/intersection-of-two-arrays/)
 
+  **提示：**
+  + `1 <= nums1.length, nums2.length <= 1000`
+  + `0 <= nums1[i], nums2[i] <= 1000`
 
+  ![](/Leetcode/suixianglu/assets/hash_table/0349.png)
+
+### 3.3 快乐数
+  [happy-number](https://leetcode.cn/problems/happy-number/)
+  
+  **快乐数的定义**
+  + 对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。
+  + 然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。
+  + 如果这个过程 结果为 1，那么这个数就是快乐数。
+  
+  **提示：**
+  + `1 <= n <= 2^31 - 1`
+
+  ![](/Leetcode/suixianglu/assets/hash_table/0202.png)
+
+  ### 3.4 两数之和
+  [two-sum](https://leetcode.cn/problems/two-sum/)
+
+  **提示：**
+  + `2 <= nums.length <= 10^4`
+  + `-10^9 <= nums[i] <= 10^9`
+  + `-10^9 <= target <= 10^9`
+  + 只会存在一个有效答案
+
+  **进阶：**
+  你可以想出一个时间复杂度小于 `O(n^2)` 的算法吗？
+
+  ![](/Leetcode/suixianglu/assets/hash_table/0001.png)
