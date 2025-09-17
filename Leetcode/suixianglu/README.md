@@ -145,6 +145,7 @@
   [valid-anagram](https://leetcode.cn/problems/valid-anagram/)
 
   **提示：**
+  + 字母异位词是通过重新排列不同单词或短语的字母而形成的单词或短语，并使用所有原字母一次
   + `1 <= s.length, t.length <= 5 * 10^4`
   + `s` 和 `t` 仅包含小写字母
 

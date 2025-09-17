@@ -10,7 +10,7 @@
 using namespace std;
 
 
-class MyLinkedList {
+class myLinkedList {
 public:
     struct ListNode {
         int val;
@@ -31,7 +31,7 @@ public:
     ListNode* removeElements(ListNode* head, int val);
 
     // >>> LeetCode_707——设计链表 >>>
-    MyLinkedList();
+    myLinkedList();
     int get(int index);
     void addAtHead(int val);
     void addAtTail(int val);

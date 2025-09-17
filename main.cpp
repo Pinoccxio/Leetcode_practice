@@ -1,8 +1,8 @@
 #include <iostream>
 
 #include "Leetcode/interview_75/interview_75.cpp"
-#include "Leetcode/suixianglu/Array.cpp"
-#include "Leetcode/suixianglu/MyLinkedList.cpp"
+#include "Leetcode/suixianglu/array.cpp"
+#include "Leetcode/suixianglu/myLinkedList.cpp"
 
 using namespace std;
 // tip: Run-(Shift + F10)
@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     Interview_75 interview_75;
-    Array array;
+    array array;
     cout << "This is a test for Leetcode" << endl;
 
     // ======= mergeAlternately =======
@@ -44,7 +44,7 @@ int main() {
     // ======= canPlaceFlowers =======
 
     // ======= design-linked-list =======
-    // MyLinkedList* my_linked_list = new MyLinkedList();
+    // myLinkedList* my_linked_list = new MyLinkedList();
     // my_linked_list -> addAtHead(1);
     // my_linked_list -> addAtTail(3);
     // cout << my_linked_list -> get(1) << endl;

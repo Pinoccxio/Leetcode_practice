@@ -2,11 +2,11 @@
 // Created by cx on 25-9-2.
 //
 
-#include "./MyLinkedList.h"
+#include "./myLinkedList.h"
 
 // >>> LeetCode_203——移除链表元素 >>>
 // (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
-MyLinkedList::ListNode* MyLinkedList::removeElements(ListNode* head, int val) {
+myLinkedList::ListNode* myLinkedList::removeElements(ListNode* head, int val) {
     ListNode* cur = new ListNode(0);
     cur->next = head;
     ListNode* res = cur;
@@ -26,7 +26,7 @@ MyLinkedList::ListNode* MyLinkedList::removeElements(ListNode* head, int val) {
 
 // >>> LeetCode_707——设计链表 >>>
 // (25/09/01 DONE: 3 ms——96.00%, 25.81MB——5%)
-MyLinkedList::MyLinkedList() {
+myLinkedList::myLinkedList() {
     d_list = new DoubleLinkList(0);
     d_list -> next = d_list;
     d_list -> prev = d_list;
@@ -34,7 +34,7 @@ MyLinkedList::MyLinkedList() {
 }
 
 // 链表索引
-int MyLinkedList::get(int index) {
+int myLinkedList::get(int index) {
     if (index > (list_size - 1) || index < 0) { // 检查索引是否超出范围
         return -1; // 如果超出范围，返回-1
     }
@@ -46,7 +46,7 @@ int MyLinkedList::get(int index) {
 }
 
 // 链表头部添加
-void MyLinkedList::addAtHead(int val) {
+void myLinkedList::addAtHead(int val) {
     DoubleLinkList* newNode = new DoubleLinkList(val);
     DoubleLinkList* ori_next = d_list -> next;
     newNode -> next = ori_next;
@@ -57,7 +57,7 @@ void MyLinkedList::addAtHead(int val) {
 }
 
 // 链表头部添加
-void MyLinkedList::addAtTail(int val) {
+void myLinkedList::addAtTail(int val) {
     DoubleLinkList* newNode = new DoubleLinkList(val);
     DoubleLinkList* ori_tail = d_list -> prev;
     newNode -> prev = ori_tail;
@@ -68,7 +68,7 @@ void MyLinkedList::addAtTail(int val) {
 }
 
 // 链表索引添加
-void MyLinkedList::addAtIndex(int index, int val) {
+void myLinkedList::addAtIndex(int index, int val) {
     if (index > list_size) return;
     if (index < 0) index = 0;
     DoubleLinkList* tmp = d_list -> next;
@@ -85,7 +85,7 @@ void MyLinkedList::addAtIndex(int index, int val) {
 }
 
 // 链表索引删除
-void MyLinkedList::deleteAtIndex(int index) {
+void myLinkedList::deleteAtIndex(int index) {
     if (index < 0 || index >= list_size) return;
     DoubleLinkList* tmp = d_list -> next;
     for (int i = 0; i < index; i++) {
@@ -101,7 +101,7 @@ void MyLinkedList::deleteAtIndex(int index) {
 
 // >>> LeetCode_206——翻转链表 >>>
 // (25/09/02 DONE: 0 ms——100.00%, 13.04MB——90.88%)
-MyLinkedList::ListNode* MyLinkedList::reverseList(ListNode* head) {
+myLinkedList::ListNode* myLinkedList::reverseList(ListNode* head) {
     ListNode* tmp = new ListNode(0);    // 存储下一个的结点以防断掉
     ListNode* slow = nullptr;           // 慢指针
     ListNode* fast = head;              // 快指针
@@ -119,7 +119,7 @@ MyLinkedList::ListNode* MyLinkedList::reverseList(ListNode* head) {
 
 // >>> LeetCode_24——两两交换链表中的节点 >>>
 // (25/09/02 DONE: 0 ms——100.00%, 11.09MB——21.80%)
-MyLinkedList::ListNode* MyLinkedList::swapPairs(ListNode* head) {
+myLinkedList::ListNode* myLinkedList::swapPairs(ListNode* head) {
     if (head == nullptr || head->next == nullptr) {
         return head;
     }
@@ -152,7 +152,7 @@ MyLinkedList::ListNode* MyLinkedList::swapPairs(ListNode* head) {
 
 // >>> LeetCode_19——删除链表的倒数第 N 个结点 >>>
 // (25/09/03 DONE: 0 ms——100.00%, 14.61MB——89.56%)
-MyLinkedList::ListNode* MyLinkedList::removeNthFromEnd(ListNode* head, int n) {
+myLinkedList::ListNode* myLinkedList::removeNthFromEnd(ListNode* head, int n) {
     ListNode* dummy = new ListNode(0);
     dummy -> next = head;
     ListNode* slow = dummy;
@@ -173,7 +173,7 @@ MyLinkedList::ListNode* MyLinkedList::removeNthFromEnd(ListNode* head, int n) {
 
 // >>> LeetCode_interview02.07——链表相交 >>>
 // (25/09/03 DONE: 42 ms——50.99%, 18.13MB——79.00%)
-MyLinkedList::ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
+myLinkedList::ListNode* myLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
     ListNode* a_head = headA;
     ListNode* b_head = headB;
     int lenA = 0;
@@ -212,7 +212,7 @@ MyLinkedList::ListNode* MyLinkedList::getIntersectionNode(ListNode *headA, ListN
 
 // >>> LeetCode_142——环形链表 II >>>
 // (25/09/03 DONE: 12 ms——25.16%, 11.11MB——75.38%)
-MyLinkedList::ListNode* MyLinkedList::detectCycle(ListNode *head) {
+myLinkedList::ListNode* myLinkedList::detectCycle(ListNode *head) {
     ListNode* dummyHead = new ListNode(0);
     dummyHead -> next = head;
     ListNode* fast = dummyHead;

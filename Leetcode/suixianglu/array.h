@@ -13,7 +13,7 @@
 using namespace std;
 
 
-class Array {
+class array {
 public:
     // LeetCode_704——二分查找
     int search(vector<int>& nums, int target);
