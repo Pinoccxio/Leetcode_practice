@@ -8,7 +8,7 @@
 
 
 // LeetCode_704——二分查找
-// (25/05/12 DONE: 0 ms——100%, 30.63MB——74.06%)
+// (25/05/12 DONE: 0 ms——100%, 30.63 MB——74.06%)
 int array::search(vector<int>& nums, int target) {
     // ======= LeetCode Solution =======
     int left = 0, right = nums.size() - 1;
@@ -46,7 +46,7 @@ int array::search(vector<int>& nums, int target) {
 
 
 // LeetCode_27——移除元素
-// (25/05/12 DONE: 0 ms——100%, 11.40MB——95.18%)
+// (25/05/12 DONE: 0 ms——100%, 11.40 MB——95.18%)
 int array::removeElement(vector<int>& nums, int val) {
     // ======= LeetCode Solution =======
     int left = 0, right = nums.size();
@@ -78,7 +78,7 @@ int array::removeElement(vector<int>& nums, int val) {
 
 
 // LeetCode_977——有序数组的平方
-// (25/05/12 DONE: 7 ms——26.89%, 29.68MB——47.99%)
+// (25/05/12 DONE: 7 ms——26.89%, 29.68 MB——47.99%)
 vector<int> array::sortedSquares(vector<int>& nums) {
     // ======= LeetCode Solution =======
     int n = nums.size();
@@ -128,7 +128,7 @@ vector<int> array::sortedSquares(vector<int>& nums) {
 
 
 // LeetCode_209——长度最小的子数组
-// (25/05/12 DONE: 0 ms——100%, 31.53MB——31.35%)
+// (25/05/12 DONE: 0 ms——100%, 31.53 MB——31.35%)
 int array::minSubarrayLen(int target, vector<int>& nums) {
     int n = nums.size();
     int i = 0, len = n+1, sum = 0, subLen = 0;

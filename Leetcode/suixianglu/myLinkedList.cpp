@@ -5,7 +5,7 @@
 #include "./myLinkedList.h"
 
 // >>> LeetCode_203——移除链表元素 >>>
-// (25/05/13 DONE: 0 ms——100%, 19.82MB——55.56%)
+// (25/05/13 DONE: 0 ms——100%, 19.82 MB——55.56%)
 myLinkedList::ListNode* myLinkedList::removeElements(ListNode* head, int val) {
     ListNode* cur = new ListNode(0);
     cur->next = head;
@@ -25,7 +25,7 @@ myLinkedList::ListNode* myLinkedList::removeElements(ListNode* head, int val) {
 
 
 // >>> LeetCode_707——设计链表 >>>
-// (25/09/01 DONE: 3 ms——96.00%, 25.81MB——5%)
+// (25/09/01 DONE: 3 ms——96.00%, 25.81 MB——5%)
 myLinkedList::myLinkedList() {
     d_list = new DoubleLinkList(0);
     d_list -> next = d_list;
@@ -100,7 +100,7 @@ void myLinkedList::deleteAtIndex(int index) {
 
 
 // >>> LeetCode_206——翻转链表 >>>
-// (25/09/02 DONE: 0 ms——100.00%, 13.04MB——90.88%)
+// (25/09/02 DONE: 0 ms——100.00%, 13.04 MB——90.88%)
 myLinkedList::ListNode* myLinkedList::reverseList(ListNode* head) {
     ListNode* tmp = new ListNode(0);    // 存储下一个的结点以防断掉
     ListNode* slow = nullptr;           // 慢指针
@@ -118,7 +118,7 @@ myLinkedList::ListNode* myLinkedList::reverseList(ListNode* head) {
 
 
 // >>> LeetCode_24——两两交换链表中的节点 >>>
-// (25/09/02 DONE: 0 ms——100.00%, 11.09MB——21.80%)
+// (25/09/02 DONE: 0 ms——100.00%, 11.09 MB——21.80%)
 myLinkedList::ListNode* myLinkedList::swapPairs(ListNode* head) {
     if (head == nullptr || head->next == nullptr) {
         return head;
@@ -151,7 +151,7 @@ myLinkedList::ListNode* myLinkedList::swapPairs(ListNode* head) {
 
 
 // >>> LeetCode_19——删除链表的倒数第 N 个结点 >>>
-// (25/09/03 DONE: 0 ms——100.00%, 14.61MB——89.56%)
+// (25/09/03 DONE: 0 ms——100.00%, 14.61 MB——89.56%)
 myLinkedList::ListNode* myLinkedList::removeNthFromEnd(ListNode* head, int n) {
     ListNode* dummy = new ListNode(0);
     dummy -> next = head;
@@ -172,7 +172,7 @@ myLinkedList::ListNode* myLinkedList::removeNthFromEnd(ListNode* head, int n) {
 
 
 // >>> LeetCode_interview02.07——链表相交 >>>
-// (25/09/03 DONE: 42 ms——50.99%, 18.13MB——79.00%)
+// (25/09/03 DONE: 42 ms——50.99%, 18.13 MB——79.00%)
 myLinkedList::ListNode* myLinkedList::getIntersectionNode(ListNode *headA, ListNode *headB) {
     ListNode* a_head = headA;
     ListNode* b_head = headB;
@@ -211,7 +211,7 @@ myLinkedList::ListNode* myLinkedList::getIntersectionNode(ListNode *headA, ListN
 // <<< LeetCode_interview02.07——链表相交点 <<<
 
 // >>> LeetCode_142——环形链表 II >>>
-// (25/09/03 DONE: 12 ms——25.16%, 11.11MB——75.38%)
+// (25/09/03 DONE: 12 ms——25.16%, 11.11 MB——75.38%)
 myLinkedList::ListNode* myLinkedList::detectCycle(ListNode *head) {
     ListNode* dummyHead = new ListNode(0);
     dummyHead -> next = head;
