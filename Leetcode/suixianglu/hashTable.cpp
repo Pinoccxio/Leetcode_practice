@@ -28,6 +28,7 @@ bool hashTable::isAnagram(string s, string t) {
 }
 // <<< LeetCode_242——有效的字母异位词 <<<
 
+
 // >>> LeetCode_349——两个数组的交集 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 14.55 MB——9.37%)
 vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
@@ -46,6 +47,7 @@ vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
     // ======= SuiXiangLu Solution =======
 }
 // <<< LeetCode_349——两个数组的交集 <<<
+
 
 // >>> LeetCode_202——快乐数 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 8.37 MB——22.62%)
@@ -79,6 +81,7 @@ bool hashTable::isHappy(int n) {
 }
 // <<< LeetCode_202——快乐数 <<<
 
+
 // >>> LeetCode_001——两数之和 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 14.44 MB——63.55%)
 vector<int> hashTable::twoSum(vector<int>& nums, int target) {
@@ -94,6 +97,7 @@ vector<int> hashTable::twoSum(vector<int>& nums, int target) {
     return {};
 }
 // <<< LeetCode_001——两数之和 <<<
+
 
 // >>> LeetCode_454——四数相加II >>>
 // (25/09/18 DONE: 99 ms——94.86%, 27.57 MB—60.01%)
@@ -145,3 +149,21 @@ int hashTable::fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>&
     // ======= Leetcode Solution =======
 }
 // <<< LeetCode_454——四数相加II <<<
+
+
+// >>> Leetcode_383——赎金信 >>>
+// (25/09/18 DONE: 0 ms——100.00%, 11.50 MB——79.37%)
+bool hashTable::canConstruct(string ransomNote, string magazine) {
+    int alphabet[26] = {0};
+    for (int j = 0; j < magazine.size(); j++) {
+        alphabet[magazine[j] - 'a']++;
+    }
+    for (int i = 0; i < ransomNote.size(); i++) {
+        alphabet[ransomNote[i] - 'a']--;
+        if (alphabet[ransomNote[i]-'a'] < 0) {
+            return false;
+        }
+    }
+    return true;
+}
+// <<< Leetcode_383——赎金信 <<<
