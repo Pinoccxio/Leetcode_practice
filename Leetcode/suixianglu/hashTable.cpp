@@ -5,7 +5,7 @@
 #include "./hashTable.h"
 
 // >>> LeetCode_242——有效的字母异位词 >>>
-// (25/09/17 DONE: 0 ms——100.00%, 9.46MB——83.30%)
+// (25/09/17 DONE: 0 ms——100.00%, 9.46 MB——83.30%)
 bool hashTable::isAnagram(string s, string t) {
     int record[26] = {0};
     for (int i = 0; i < s.size(); i++) {
@@ -27,7 +27,7 @@ bool hashTable::isAnagram(string s, string t) {
 // <<< LeetCode_242——有效的字母异位词 <<<
 
 // >>> LeetCode_349——两个数组的交集 >>>
-// (25/09/17 DONE: 0 ms——100.00%, 14.55MB——9.37%)
+// (25/09/17 DONE: 0 ms——100.00%, 14.55 MB——9.37%)
 vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
     unordered_set<int> result_set; // 存放结果，之所以用set是为了给结果集去重
     int hash[1005] = {0}; // 默认数值为0
@@ -44,7 +44,7 @@ vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
 // <<< LeetCode_349——两个数组的交集 <<<
 
 // >>> LeetCode_202——快乐数 >>>
-// (25/09/17 DONE: 0 ms——100.00%, 8.37MB——22.62%)
+// (25/09/17 DONE: 0 ms——100.00%, 8.37 MB——22.62%)
 // 取数值各个位上的单数之和
 int getSum(int n) {
     int sum = 0;
@@ -74,7 +74,7 @@ bool hashTable::isHappy(int n) {
 // <<< LeetCode_202——快乐数 <<<
 
 // >>> LeetCode_001——两数之和 >>>
-// (25/09/17 DONE: 0 ms——100.00%, 14.44MB——63.55%)
+// (25/09/17 DONE: 0 ms——100.00%, 14.44 MB——63.55%)
 vector<int> hashTable::twoSum(vector<int>& nums, int target) {
     unordered_map <int, int> myMap;
     for (int i = 0; i < nums.size(); i++) {
@@ -88,3 +88,36 @@ vector<int> hashTable::twoSum(vector<int>& nums, int target) {
     return {};
 }
 // <<< LeetCode_001——两数之和 <<<
+
+// >>> LeetCode_454——四数相加II >>>
+// (25/09/18 DONE: 99 ms——94.86%, 27.57 MB—60.01%)
+int hashTable::fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
+    int count = 0;
+    unordered_map<int,int> sums12;
+    // 计算AB
+    for (int num1:nums1) {
+        for (int num2:nums2) {
+            int sum12 = num1 + num2;
+            auto find12 = sums12.find(sum12);
+            if (find12 != sums12.end()) {
+                find12->second++;
+            }
+            else {
+                sums12.insert({sum12, 1});
+            }
+        }
+    }
+
+    // 计算CD
+    for (int num3:nums3) {
+        for (int num4:nums4) {
+            int sum34 = num3 + num4;
+            auto find34 = sums12.find((-sum34));
+            if (find34 != sums12.end()) {
+                count += find34->second;
+            }
+        }
+    }
+    return count;
+}
+// <<< LeetCode_454——四数相加II <<<

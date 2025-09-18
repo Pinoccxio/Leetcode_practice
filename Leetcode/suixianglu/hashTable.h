@@ -27,6 +27,9 @@ public:
 
     // LeetCode_001——两数之和
     vector<int> twoSum(vector<int>& nums, int target);
+
+    // LeetCode_454——四数相加II
+    int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4)
 };
 
 
