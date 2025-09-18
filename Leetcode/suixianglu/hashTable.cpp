@@ -7,6 +7,7 @@
 // >>> LeetCode_242——有效的字母异位词 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 9.46 MB——83.30%)
 bool hashTable::isAnagram(string s, string t) {
+    // ======= SuiXiangLu Solution =======
     int record[26] = {0};
     for (int i = 0; i < s.size(); i++) {
         // 并不需要记住字符a的ASCII，只要求出一个相对数值就可以了
@@ -23,12 +24,14 @@ bool hashTable::isAnagram(string s, string t) {
     }
     // record数组所有元素都为零0，说明字符串s和t是字母异位词
     return true;
+    // ======= SuiXiangLu Solution =======
 }
 // <<< LeetCode_242——有效的字母异位词 <<<
 
 // >>> LeetCode_349——两个数组的交集 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 14.55 MB——9.37%)
 vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
+    // ======= SuiXiangLu Solution =======
     unordered_set<int> result_set; // 存放结果，之所以用set是为了给结果集去重
     int hash[1005] = {0}; // 默认数值为0
     for (int num : nums1) { // nums1中出现的字母在hash数组中做记录
@@ -40,6 +43,7 @@ vector<int> hashTable::intersection(vector<int>& nums1, vector<int>& nums2) {
         }
     }
     return vector<int>(result_set.begin(), result_set.end());
+    // ======= SuiXiangLu Solution =======
 }
 // <<< LeetCode_349——两个数组的交集 <<<
 
@@ -56,6 +60,7 @@ int getSum(int n) {
 }
 
 bool hashTable::isHappy(int n) {
+    // ======= SuiXiangLu Solution =======
     unordered_set<int> set;
     while(1) {
         int sum = getSum(n);
@@ -70,6 +75,7 @@ bool hashTable::isHappy(int n) {
         }
         n = sum;
     }
+    // ======= SuiXiangLu Solution =======
 }
 // <<< LeetCode_202——快乐数 <<<
 
@@ -119,5 +125,23 @@ int hashTable::fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>&
         }
     }
     return count;
+
+    // ======= Leetcode Solution =======
+    unordered_map<int, int> countAB;
+    for (int u: nums1) {
+        for (int v: nums2) {
+            ++countAB[u + v];
+        }
+    }
+    int ans = 0;
+    for (int u: nums3) {
+        for (int v: nums4) {
+            if (countAB.count(-u - v)) {
+                ans += countAB[-u - v];
+            }
+        }
+    }
+    return ans;
+    // ======= Leetcode Solution =======
 }
 // <<< LeetCode_454——四数相加II <<<
