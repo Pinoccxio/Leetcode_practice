@@ -33,6 +33,9 @@ public:
 
     // Leetcode_383——赎金信
     bool canConstruct(string ransomNote, string magazine);
+
+    // Leetcode_015——三数之和
+    vector<vector<int>> threeSum(vector<int>& nums)
 };
 
 
