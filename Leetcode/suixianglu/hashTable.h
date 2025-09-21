@@ -35,7 +35,11 @@ public:
     bool canConstruct(string ransomNote, string magazine);
 
     // Leetcode_015——三数之和
-    vector<vector<int>> threeSum(vector<int>& nums)
+    vector<vector<int>> threeSum(vector<int>& nums);
+
+    // Leetcode_018——四数之和
+    vector<vector<int>> fourSum(vector<int>& nums, int target);
+
 };
 
 

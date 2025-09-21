@@ -169,6 +169,7 @@ bool hashTable::canConstruct(string ransomNote, string magazine) {
 // <<< Leetcode_383——赎金信 <<<
 
 
+// >>> Leetcode_015——三数之和 >>>
 vector<vector<int>> hashTable::threeSum(vector<int>& nums) {
     // ======= SuiXiangLu Solution--HashTable =======
     // 在一个数组中找到3个数形成的三元组，它们的和为0，不能重复使用（三数下标互不相同），且三元组不能重复。
@@ -256,3 +257,48 @@ vector<vector<int>> hashTable::threeSum(vector<int>& nums) {
         // ======= SuiXiangLu Solution--Double Pointer =======
 
 }
+// <<< Leetcode_015——三数之和 <<<
+
+
+// >>> Leetcode_018——四数之和 >>>
+// (25/09/18 DONE: 23 ms——58.50%, 17.27 MB——9.77%)
+vector<vector<int>> hashTable::fourSum(vector<int>& nums, int target) {
+    vector<vector<int>> result;
+    sort(nums.begin(), nums.end());
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] > target && nums[i] >= 0) {
+            break;
+        }
+        if (i > 0 && nums[i] == nums[i-1]) {
+            continue;
+        }
+        for (int j = i + 1; j < nums.size(); j++) {
+            if (nums[i] + nums[j] > target && nums[i] + nums[j] >= 0) {
+                break;
+            }
+            if (j > i + 1 && nums[j] == nums[j - 1]) {
+                continue;
+            }
+
+            int left = j + 1;
+            int right = nums.size() - 1;
+
+            while(left < right) {
+                if ((long)nums[i] + nums[j] + nums[left] + nums[right] > target) {right--;}
+                else if ( (long)nums[i] + nums[j] + nums[left] + nums[right] < target) {left++;}
+                else {
+                    result.push_back(vector<int>{nums[i], nums[j], nums[left], nums[right]});
+
+                    while (right > left && nums[right] == nums[right - 1]) right--;
+                    while (right > left && nums[left] == nums[left + 1]) left++;
+                    right--;
+                    left++;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+// <<< Leetcode_018——四数之和 <<<
