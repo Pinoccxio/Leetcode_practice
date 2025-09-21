@@ -189,3 +189,44 @@
   你可以想出一个时间复杂度小于 `O(n^2)` 的算法吗？
 
   ![](/Leetcode/suixianglu/assets/hash_table/0001.png)
+
+  ### 3.5 四数相加II
+  [4sum-ii](https://leetcode.cn/problems/4sum-ii/)
+  
+  **提示：**
+  + `n == nums1.length` 
+  + `n == nums2.length` 
+  + `n == nums3.length` 
+  + `n == nums4.length` 
+  + `1 <= n <= 200`
+  + `-2^28 <= nums1[i], nums2[i], nums3[i], nums4[i] <= 2^28`
+  
+  ![](/Leetcode/suixianglu/assets/hash_table/0454.png)
+
+  ### 3.6 赎金信
+  [ransom-note](https://leetcode.cn/problems/ransom-note/)
+  
+  **提示：**
+  + `1 <= ransomNote.length, magazine.length <= 10^5` 
+  + `ransomNote` 和 `magazine` 由小写英文字母组成
+  
+  ![](/Leetcode/suixianglu/assets/hash_table/0383.png)
+
+  ### 3.7 三数之和
+  [3sum](https://leetcode.cn/problems/3sum/)
+  
+  **提示：**
+  + `3 <= nums.length <= 3000`
+  + `-10^5 <= nums[i] <= 10^5`
+  
+  ![](/Leetcode/suixianglu/assets/hash_table/0015.png)
+
+  ### 3.8 四数之和
+  [4sum](https://leetcode.cn/problems/4sum/)
+  
+  **提示：**
+  + `1 <= nums.length <= 200`
+  + `-10^9 <= nums[i] <= 10^9`
+  + `-10^9 <= target <= 10^9`
+  
+  ![](/Leetcode/suixianglu/assets/hash_table/0018.png)
