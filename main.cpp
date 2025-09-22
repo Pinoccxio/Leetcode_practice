@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     Interview_75 interview_75;
-    array array;
+    Array array;
     cout << "This is a test for Leetcode" << endl;
 
     // ======= mergeAlternately =======

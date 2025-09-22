@@ -9,7 +9,7 @@
 
 // LeetCode_704——二分查找
 // (25/05/12 DONE: 0 ms——100%, 30.63 MB——74.06%)
-int array::search(vector<int>& nums, int target) {
+int Array::search(vector<int>& nums, int target) {
     // ======= LeetCode Solution =======
     int left = 0, right = nums.size() - 1;
     while(left <= right){
@@ -47,7 +47,7 @@ int array::search(vector<int>& nums, int target) {
 
 // LeetCode_27——移除元素
 // (25/05/12 DONE: 0 ms——100%, 11.40 MB——95.18%)
-int array::removeElement(vector<int>& nums, int val) {
+int Array::removeElement(vector<int>& nums, int val) {
     // ======= LeetCode Solution =======
     int left = 0, right = nums.size();
     while (left < right) {
@@ -79,7 +79,7 @@ int array::removeElement(vector<int>& nums, int val) {
 
 // LeetCode_977——有序数组的平方
 // (25/05/12 DONE: 7 ms——26.89%, 29.68 MB——47.99%)
-vector<int> array::sortedSquares(vector<int>& nums) {
+vector<int> Array::sortedSquares(vector<int>& nums) {
     // ======= LeetCode Solution =======
     int n = nums.size();
     vector<int> ans(n);
@@ -129,7 +129,7 @@ vector<int> array::sortedSquares(vector<int>& nums) {
 
 // LeetCode_209——长度最小的子数组
 // (25/05/12 DONE: 0 ms——100%, 31.53 MB——31.35%)
-int array::minSubArrayLen(int target, vector<int>& nums) {
+int Array::minSubArrayLen(int target, vector<int>& nums) {
     int n = nums.size();
     int i = 0, len = n+1, sum = 0, subLen = 0;
     for (int j = 0; j < n; j++) {
@@ -152,7 +152,7 @@ int array::minSubArrayLen(int target, vector<int>& nums) {
 
 // LeetCode_59——螺旋矩阵II
 // (25/05/12 UNDONE!!!)
-vector<vector<int>> array::generateMatrix(int n) {
+vector<vector<int>> Array::generateMatrix(int n) {
     // ======= SuiXiangLu Solution =======
     vector<vector<int>> res(n, vector<int>(n, 0)); // 使用vector定义一个二维数组
     int startx = 0, starty = 0; // 定义每循环一个圈的起始位置
