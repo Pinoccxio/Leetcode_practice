@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.16)
 project(xin)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -12,4 +12,6 @@ add_executable(xin main.cpp
         Leetcode/suixianglu/myLinkedList.h
         Leetcode/suixianglu/hashTable.cpp
         Leetcode/suixianglu/hashTable.h
+        Leetcode/suixianglu/string_cx.cpp
+        Leetcode/suixianglu/string_cx.h
 )

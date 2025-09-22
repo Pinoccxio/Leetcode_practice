@@ -1,0 +1,3 @@
+/home/cx/xin_ws/Leetcode_practice/CMakeFiles/rebuild_cache.dir
+/home/cx/xin_ws/Leetcode_practice/CMakeFiles/edit_cache.dir
+/home/cx/xin_ws/Leetcode_practice/CMakeFiles/xin.dir

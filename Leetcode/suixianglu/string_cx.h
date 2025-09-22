@@ -5,6 +5,13 @@
 #ifndef XIN_STRING_CX_H
 #define XIN_STRING_CX_H
 
+#pragma once
+
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
 
 class string_cx {
 public:
@@ -14,8 +21,14 @@ public:
     // LeetCode_541——反转字符串 II
     string reverseStr(string s, int k);
 
+    // KamaCoder_54——替换字符串数字
+    string replaceNumber(string s);
+
     // LeetCode_151——反转字符串中的单词
     string reverseWords(string s);
+
+    // KamaCoder_55——右旋字符串
+    string rightSpinString(string& s);
 };
 
 

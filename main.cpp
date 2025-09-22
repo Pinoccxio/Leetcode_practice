@@ -3,6 +3,7 @@
 #include "Leetcode/interview_75/interview_75.cpp"
 #include "Leetcode/suixianglu/array.cpp"
 #include "Leetcode/suixianglu/myLinkedList.cpp"
+#include "Leetcode/suixianglu/string_cx.cpp"
 
 using namespace std;
 // tip: Run-(Shift + F10)

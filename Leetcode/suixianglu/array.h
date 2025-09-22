@@ -12,7 +12,6 @@
 
 using namespace std;
 
-
 class Array {
 public:
     // LeetCode_704——二分查找
