@@ -1,5 +1,7 @@
 # [代码随想录](https://programmercarl.com/)
 
+---
+
 ## 1. 数组
 
 ### 1.1 二分查找
@@ -49,6 +51,8 @@
    + `1 <= n <= 20`
    
    ![](/Leetcode/suixianglu/assets/array/0059.png)
+
+---
 
 ## 2. 链表
 
@@ -139,6 +143,8 @@
 
   ![](/Leetcode/suixianglu/assets/linked_list/0142.png)
 
+---
+
 ## 3. 哈希表
 
 ### 3.1 有效的字母异位词
@@ -176,7 +182,7 @@
 
   ![](/Leetcode/suixianglu/assets/hash_table/0202.png)
 
-  ### 3.4 两数之和
+### 3.4 两数之和
   [two-sum](https://leetcode.cn/problems/two-sum/)
 
   **提示：**
@@ -190,7 +196,7 @@
 
   ![](/Leetcode/suixianglu/assets/hash_table/0001.png)
 
-  ### 3.5 四数相加II
+### 3.5 四数相加II
   [4sum-ii](https://leetcode.cn/problems/4sum-ii/)
   
   **提示：**
@@ -203,7 +209,7 @@
   
   ![](/Leetcode/suixianglu/assets/hash_table/0454.png)
 
-  ### 3.6 赎金信
+### 3.6 赎金信
   [ransom-note](https://leetcode.cn/problems/ransom-note/)
   
   **提示：**
@@ -212,7 +218,7 @@
   
   ![](/Leetcode/suixianglu/assets/hash_table/0383.png)
 
-  ### 3.7 三数之和
+### 3.7 三数之和
   [3sum](https://leetcode.cn/problems/3sum/)
   
   **提示：**
@@ -221,7 +227,7 @@
   
   ![](/Leetcode/suixianglu/assets/hash_table/0015.png)
 
-  ### 3.8 四数之和
+### 3.8 四数之和
   [4sum](https://leetcode.cn/problems/4sum/)
   
   **提示：**
@@ -230,3 +236,46 @@
   + `-10^9 <= target <= 10^9`
   
   ![](/Leetcode/suixianglu/assets/hash_table/0018.png)
+
+---
+
+## 4. 字符串
+
+### 4.1 反转字符串
+  [reverse-string](https://leetcode.cn/problems/reverse-string/)
+
+  **提示：**
+  + `1 <= s.length <= 10^5`
+  + `s[i]` 都是 ASCII 码表中的可打印字符
+  
+  ![](/Leetcode/suixianglu/assets/string/0344.png)
+
+### 4.2 反转字符串 II
+  [reverse-string-ii](https://leetcode.cn/problems/reverse-string-ii/)
+  
+  **提示：**
+  + `1 <= s.length <= 10^4`
+  + `s` 仅由小写英文组成
+  + `1 <= k <= 10^4`
+
+  ![](/Leetcode/suixianglu/assets/string/0541.png)
+
+### 4.3 替换数字
+  [kama-replace_number](https://kamacoder.com/problempage.php?pid=1064)
+  
+  **提示：**
+  + 给定一个字符串 `s`，它包含小写字母和数字字符，请编写一个函数，将字符串中的字母字符保持不变，而将每个数字字符替换为`number`。
+  + 例如，对于输入字符串 `a1b2c3`，函数应该将其转换为 `anumberbnumbercnumber`。
+
+![](/Leetcode/suixianglu/assets/string/kama_0054.png)
+
+### 4.4 反转字符串中的单词
+[reverse-words-in-a-string](https://leetcode.cn/problems/reverse-words-in-a-string/)
+
+  **提示：**
+  + `1 <= s.length <= 10^4`
+  + `s` 包含英文大小写字母、数字和空格 `' '`
+  + `s` 中 **至少存在一个** 单词
+
+![](/Leetcode/suixianglu/assets/string/0151.png)
+
