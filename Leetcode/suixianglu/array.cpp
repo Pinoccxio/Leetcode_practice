@@ -129,7 +129,7 @@ vector<int> array::sortedSquares(vector<int>& nums) {
 
 // LeetCode_209——长度最小的子数组
 // (25/05/12 DONE: 0 ms——100%, 31.53 MB——31.35%)
-int array::minSubarrayLen(int target, vector<int>& nums) {
+int array::minSubArrayLen(int target, vector<int>& nums) {
     int n = nums.size();
     int i = 0, len = n+1, sum = 0, subLen = 0;
     for (int j = 0; j < n; j++) {
