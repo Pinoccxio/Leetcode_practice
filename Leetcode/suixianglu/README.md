@@ -267,15 +267,56 @@
   + 给定一个字符串 `s`，它包含小写字母和数字字符，请编写一个函数，将字符串中的字母字符保持不变，而将每个数字字符替换为`number`。
   + 例如，对于输入字符串 `a1b2c3`，函数应该将其转换为 `anumberbnumbercnumber`。
 
-![](/Leetcode/suixianglu/assets/string/kama_0054.png)
+  ![](/Leetcode/suixianglu/assets/string/kama_0054.png)
 
 ### 4.4 反转字符串中的单词
-[reverse-words-in-a-string](https://leetcode.cn/problems/reverse-words-in-a-string/)
+  [reverse-words-in-a-string](https://leetcode.cn/problems/reverse-words-in-a-string/)
 
   **提示：**
   + `1 <= s.length <= 10^4`
   + `s` 包含英文大小写字母、数字和空格 `' '`
   + `s` 中 **至少存在一个** 单词
 
-![](/Leetcode/suixianglu/assets/string/0151.png)
+  ![](/Leetcode/suixianglu/assets/string/0151.png)
 
+### 4.5 右旋字符串
+  [kama-right-spin-string](https://kamacoder.com/problempage.php?pid=1065)
+  
+  **提示：**
+  + 字符串的右旋转操作是把字符串尾部的若干个字符转移到字符串的前面。
+  + 给定一个字符串 `s` 和一个正整数 `k`，请编写一个函数，将字符串中的后面 `k` 个字符移到字符串的前面，实现字符串的右旋转操作。 
+  + 例如，对于输入字符串 `abcdefg` 和整数 `2`，函数应该将其转换为 `fgabcde`。
+
+  ![](/Leetcode/suixianglu/assets/string/kama_0055.png)
+
+### 4.6 找出字符串中第一个匹配项的下标
+  [find-the-index-of-the-first-occurrence-in-a-string](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+  
+  **提示：**
+  + `1 <= haystack.length, needle.length <= 10^4` 
+  + `haystack` 和 `needle` 仅由小写英文字符组成
+
+  ![](/Leetcode/suixianglu/assets/string/0028.png)
+
+### 4.7 重复的子字符串
+  [repeated-substring-pattern](https://leetcode.cn/problems/repeated-substring-pattern/)
+  
+  **提示：**
+  + `1 <= s.length <= 10^4` 
+  + `s` 由小写英文字母组成
+  
+  ![](/Leetcode/suixianglu/assets/string/0459.png)
+
+---
+
+## 5. 栈与队列
+
+### 5.1 用栈实现队列
+  [implement-queue-using-stacks](https://leetcode.cn/problems/implement-queue-using-stacks/)
+
+  **提示：**
+  +  `1 <= x <= 9`
+  + 最多调用 `100` 次 `push`、`pop`、`peek` 和 `empty`
+  + 假设所有操作都是有效的 （例如，一个空的队列不会调用 `pop` 或者 `peek` 操作）
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0232.png)

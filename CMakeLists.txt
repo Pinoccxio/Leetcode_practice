@@ -14,4 +14,6 @@ add_executable(xin main.cpp
         Leetcode/suixianglu/hashTable.h
         Leetcode/suixianglu/string_cx.cpp
         Leetcode/suixianglu/string_cx.h
+        Leetcode/suixianglu/stack_queue.cpp
+        Leetcode/suixianglu/stack_queue.h
 )
