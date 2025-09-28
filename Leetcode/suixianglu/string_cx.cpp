@@ -94,11 +94,12 @@ string string_cx::reverseWords(string s) {
 
 // >>> KamaCoder_55——右旋字符串 >>>
 // (25/09/22 DONE: 32 ms, 2180 kB)
-string string_cx::rightSpinString(string& s) {
+string string_cx::rightSpinString(string& s, int n) {
     reverse(s, 0, s.size()-1);
 
     reverse(s, 0, n-1);
     reverse(s, n, s.size()-1);
+    return s;
 }
 // <<< KamaCoder_55——右旋字符串 <<<
 
@@ -109,7 +110,7 @@ void getNext(int* next, const string& s) {
     int j = -1;
     next[0] = j;
 
-    for (int i = 1; i < s,size(); i++) {                // i从1开始
+    for (int i = 1; i < s.size(); i++) {                // i从1开始
           while (j >=0 && s[i] != s[j+1]) {               // 前后缀不同的情况
             j = next[j];                                // 向前后退
         }
@@ -136,9 +137,8 @@ int string_cx::strStr(string haystack, string needle) {
             j++;
         }
         if (j == needle.size()-1 )						// 文本串s里出现了模式串t
-            return (i - needle.szie()+1);
+            return (i - needle.size()+1);
         }
-    }
     return -1;
 }
 // <<< LeetCode_028——找出字符串中第一个匹配项的下标 <<<
