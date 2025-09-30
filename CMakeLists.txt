@@ -16,4 +16,6 @@ add_executable(xin main.cpp
         Leetcode/suixianglu/string_cx.h
         Leetcode/suixianglu/stack_queue.cpp
         Leetcode/suixianglu/stack_queue.h
+        Leetcode/suixianglu/binaryTree.cpp
+        Leetcode/suixianglu/binaryTree.h
 )

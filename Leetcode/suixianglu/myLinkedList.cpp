@@ -2,7 +2,7 @@
 // Created by cx on 25-9-2.
 //
 
-#include "./myLinkedList.h"
+#include "myLinkedList.h"
 
 // >>> LeetCode_203——移除链表元素 >>>
 // (25/05/13 DONE: 0 ms——100%, 19.82 MB——55.56%)

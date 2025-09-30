@@ -2,7 +2,7 @@
 // Created by cx on 25-9-15.
 //
 
-#include "./hashTable.h"
+#include "hashTable.h"
 
 // >>> LeetCode_242——有效的字母异位词 >>>
 // (25/09/17 DONE: 0 ms——100.00%, 9.46 MB——83.30%)

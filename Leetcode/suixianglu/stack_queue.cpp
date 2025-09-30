@@ -2,7 +2,7 @@
 // Created by chenx on 2025/9/24.
 //
 
-#include "./stack_queue.h"
+#include "stack_queue.h"
 
 
 // >>> LeetCode_232——用栈实现队列 >>>
