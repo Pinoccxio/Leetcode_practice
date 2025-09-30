@@ -320,3 +320,85 @@
   + 假设所有操作都是有效的 （例如，一个空的队列不会调用 `pop` 或者 `peek` 操作）
 
   ![](/Leetcode/suixianglu/assets/stack_queue/0232.png)
+
+### 5.2 用队列实现栈
+  [implement-stack-using-queues](https://leetcode.cn/problems/implement-stack-using-queues/)
+
+  **提示：**
+  +  `1 <= x <= 9`
+  + 最多调用 `100` 次 `push`、`pop`、`peek` 和 `empty`
+  + 每次调用 `pop` 和 `top` 都保证栈不为空
+
+  **进阶：**
+  你能否仅用一个队列来实现栈。
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0225.png)
+
+### 5.3 有效的括号
+  [valid-parentheses](https://leetcode.cn/problems/valid-parentheses/)
+
+  **提示：**
+  +  `1 <= s.length <= 10^4`
+  + `s` 仅由括号 `()[]{}` 组成
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0020.png)
+
+### 5.4 删除字符串中的所有相邻重复项
+  [remove-all-adjacent-duplicates-in-string](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/)
+  
+  给出由小写字母组成的字符串 s，重复项删除操作会选择两个相邻且相同的字母，并删除它们。\
+  在 s 上反复执行重复项删除操作，直到无法继续删除。\
+  在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。
+
+  **提示：**
+  +  `1 <=  s.length <= 10^4`
+  + `s` 仅由小写英文字母组成。
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/1047.png)
+
+### 5.5 逆波兰表达式求值
+  [evaluate-reverse-polish-notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+
+  给你一个字符串数组 tokens ，表示一个根据 `逆波兰表示法` 表示的算术表达式。\
+  请你计算该表达式。返回一个表示表达式值的整数。
+
+  **逆波兰表达式：**\
+  逆波兰表达式是一种后缀表达式，所谓后缀就是指算符写在后面。\
+  平常使用的算式则是一种中缀表达式，如 `( 1 + 2 ) * ( 3 + 4 )` 。\
+  该算式的逆波兰表达式写法为 `( ( 1 2 + ) ( 3 4 + ) * )` 。\
+
+  逆波兰表达式主要有以下两个**优点**：\
+  去掉括号后表达式无歧义，上式即便写成 `1 2 + 3 4 + *` 也可以依据次序计算出正确结果。\
+  适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中
+
+  **提示：**
+  +  `1 <=  s.length <= 10^4`
+  + `tokens[i]` 是一个算符`（"+"、"-"、"*" 或 "/"）`，或是在范围 `[-200, 200]` 内的一个整数
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0150.png)
+
+### 5.6 滑动窗口最大值
+  [sliding-window-maximum](https://leetcode.cn/problems/sliding-window-maximum/)
+  
+  给你一个整数数组 `nums`，有一个大小为 `k` 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 `k` 个数字。滑动窗口每次只向右移动一位。\
+  返回 _滑动窗口中的最大值_ 。
+
+  **提示：**
+  +  `1 <=  s.length <= 10^5`
+  + `-10^4 <= nums[i] <= 10^4`
+  + `1 <= k <= nums.length`
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0239.png)
+
+### 5.7 前 K 个高频元素
+  [top-k-frequent-elements](https://leetcode.cn/problems/top-k-frequent-elements/)
+
+  **提示：**
+  +  `1 <=  s.length <= 10^5`
+  + `k` 的取值范围是 `[1, 数组中不相同的元素的个数]`
+  + 题目数据保证答案唯一，换句话说，数组中前 `k` 个高频元素的集合是唯一的
+
+  **进阶：** 
+  你所设计算法的时间复杂度 必须 优于 `O(n log n)` ，其中 `n` 是数组大小。
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0347.png)
