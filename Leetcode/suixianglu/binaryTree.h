@@ -33,6 +33,11 @@ public:
     // LeetCode_145——二叉树的后序遍历
     vector<int> postorderTraversal(TreeNode* root);
 
+	// LeetCode_102——二叉树的层序遍历
+	vector<vector<int>> levelOrder(TreeNode* root);
+	// LeetCode_107——二叉树的层序遍历 II
+	vector<vector<int>> levelOrderBottom(TreeNode* root);
+
 };
 
 

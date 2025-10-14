@@ -116,3 +116,63 @@ vector<int> postorderTraversal_iter(binaryTree::TreeNode* root) {
     return result;
 }
 // <<< LeetCode_145——二叉树的后序遍历 <<<
+
+
+// >>> LeetCode_102——二叉树的层序遍历 >>>
+// (25/10/14 DONE: 0 ms——100%, 16.66 MB——80.71%)
+vector<vector<int>> binaryTree::levelOrder(TreeNode* root) {
+    vector<vector<int>> result;
+    vector<int> tmp;
+    queue<TreeNode*> que;
+
+    TreeNode* node = root;
+    if (node == nullptr) return result;
+    que.push(node);
+
+    while(!que.empty()) {
+        int size = que.size();
+        for (int i = 0; i < size; i++) {
+            node = que.front();
+            que.pop();
+
+            tmp.push_back(node->val);
+            if (node->left) que.push(node->left);
+            if (node->right) que.push(node->right);
+        }
+        result.push_back(tmp);
+        tmp.clear();
+    }
+    return result;
+}
+// <<< LeetCode_102——二叉树的层序遍历 <<<
+
+
+// >>> LeetCode_107——二叉树的层序遍历 II >>>
+// (25/10/14 DONE: 0 ms——100%, 15.70 MB——42.29%)
+vector<vector<int>> binaryTree::levelOrderBottom(TreeNode* root) {
+    vector<vector<int>> result;
+    vector<int> tmp;
+    queue<TreeNode*> que;
+
+    if (root == nullptr) return result;
+    TreeNode* node = root;
+    que.push(node);
+
+    while (!que.empty()) {
+        int size = que.size();
+
+        for (int i = 0; i < size; i++) {
+            node  = que.front();
+            que.pop();
+            tmp.push_back(node->val);
+
+            if (node->left) que.push(node->left);
+            if (node->right) que.push(node->right);
+        }
+        result.push_back(tmp);
+        tmp.clear();
+    }
+    reverse(result.begin(), result.end());
+    return result;
+}
+// <<< LeetCode_107——二叉树的层序遍历 II <<<

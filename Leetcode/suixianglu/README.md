@@ -402,3 +402,32 @@
   你所设计算法的时间复杂度 必须 优于 `O(n log n)` ，其中 `n` 是数组大小。
 
   ![](/Leetcode/suixianglu/assets/stack_queue/0347.png)
+
+---
+
+## 6. 二叉树
+
+### 6.1 二叉树的递归/迭代遍历
+  [preorder-traversal](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
+  [postorder-traversal](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+  [inorder-traversal](https://leetcode.cn/problems/binary-tree-inorder-traversal/)
+
+  **提示：**
+  +  树中节点数目在范围 `[0, 100]` 内
+  + `-100 <= Node.val <= 100`
+
+  **进阶：**
+  递归算法很简单，你可以通过迭代算法完成吗？
+
+  ![](/Leetcode/suixianglu/assets/binary_tree/0144.png)
+  ![](/Leetcode/suixianglu/assets/binary_tree/0145.png)
+  ![](/Leetcode/suixianglu/assets/binary_tree/0094.png)
+
+### 6.2 二叉树的层序遍历
+  [implement-stack-using-queues](https://leetcode.cn/problems/implement-stack-using-queues/)
+
+  **提示：**
+  +  树中节点数目在范围 `[0, 100]` 内
+  + `-100 <= Node.val <= 100`
+
+  ![](/Leetcode/suixianglu/assets/stack_queue/0225.png)
